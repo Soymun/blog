@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: postgres
+    password: qwerty
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+logging:
+  config: logback-spring.xml
+
+security:
+  provider:
+    secret: soymun
+    validate: 3600000
